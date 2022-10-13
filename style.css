@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+body{
+    background-color: antiquewhite;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    height: 20px;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav h1 {color: rebeccapurple; }
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+nav ul li a:hover {
+    color: blueviolet;
+
+}
+
+
+.hero{
+    
+    width: 100%;
+    height: 800px;
+    background-color:antiquewhite;
+    display:flex;
+}
+
+.detel{
+    height: 100%;
+    width: 55%;
+
+}
+
+
+.detel, .whatido{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+
+.detel h1{
+    font-size: 50px;
+    color:#212121;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS';
+}
+
+span{
+    color:rebeccapurple;
+}
+
+.detel p,.whatido p{
+    color: #555;
+    line-height: 22px;
+
+}
+
+.detel a, .button{
+    background:rebeccapurple;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 100%;
+    bottom: 0;
+    right:100px;
+}
+
+.images img{
+    height: 600px;
+    position: absolute;
+    left: 70%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+
+
+.whatido p{
+    margin-bottom: 20px;
+}
+
+
+.worktitle{ 
+    height: 60px;
+    width: 100vw;
+    text-align: center;
+    margin-top: 50px;
+    background-color: antiquewhite;
+
+}
+.worktitle h2, .whatido h2{
+    color: rebeccapurple;
+}
+
+.workcontainer,.workcontainer2{    
+    width: 100vw;
+    height: 450px;
+    background-color: #555;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+
+
+
+.artdesign, .artdesign2{
+    height: 400px;
+    width:400px ;
+    background-color:antiquewhite;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.artdesign h4{
+    text-align: center;
+}
+
+.workpicture {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    
+}
+.artdesign2{
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+ @media screen  and (min-width: 300px) and (max-width:800px){
+    
+    nav{
+        background-color:;
+        height: auto;
+    }
+    .hero{
+       
+        background-color: burlywood;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .images{
+        position: none;
+    }
+
+    .images img{
+        position:relative;
+    }
+    
+    .detel{
+        height: 100%;
+    
+    
+    }
+    .workcontainer,.workcontainer2{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color:burlywood ;
+    }
+    .worktitle{
+        width: auto;
+    }
+
+    .whatido{
+        width: auto;
+    }
+}
+    
+
+    
+ 
